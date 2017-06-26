@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/avatar"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:padding="10dp"
+        android:src="@mipmap/ic_launcher" />
+        />
+
+    <TextView
+        android:id="@+id/name_label"
+        android:layout_alignTop="@id/avatar"
+        android:text="@string/name_label"
+        style="@style/label" />
+
+    <TextView
+        android:id="@+id/name_content"
+        android:text="@string/name_content"
+        android:layout_toRightOf="@id/name_label"
+        style="@style/content"
+        />
+
+    <TextView
+        android:id="@+id/birthday_label"
+        android:text="@string/birthday_label"
+        android:layout_below="@id/name_label"
+        style="@style/label"/>
+
+    <TextView
+        android:id="@+id/birthday_content"
+        android:text="@string/birthday_content"
+        android:layout_below="@id/name_content"
+        android:layout_toRightOf="@id/birthday_label"
+        style="@style/content"
+        />
+
+    <TextView
+        android:id="@+id/gender_label"
+        android:text="@string/gender_label"
+        android:layout_below="@id/birthday_label"
+        style="@style/label"/>
+
+    <TextView
+        android:id="@+id/gender_content"
+        android:text="@string/gender_content"
+        android:layout_below="@id/birthday_content"
+        android:layout_toRightOf="@id/gender_label"
+        style="@style/content"
+        />
+
+</RelativeLayout>
